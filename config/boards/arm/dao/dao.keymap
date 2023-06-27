@@ -38,15 +38,15 @@
 // |--------------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
 // |   CTRL/Tab   |    A    |    S   |   D    |    F    |    G    |       |   H   |    J    |    K    |    L    |     ;    |     '    |
 // |--------------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
-// |   SHFT       |    Z    |    X   |   C    |    V    |    B    |       |   N   |    M    |    ,    |    .    |     /    | ` | ALT  |
+// |   GUI        |    Z    |    X   |   C    |    V    |    B    |       |   N   |    M    |    ,    |    .    |     /    | ` | ALT  |
 // '---------------------------------+--------+---------+---------+       |-------+---------+---------+-------------------------------'
-//                                   |  GUI   |   MO1   |   ENT   |       |  SPC  |   BKSP  |  CAPS   |
+//                                   |  SHFT  |   MO1   |   ENT   |       |  SPC  |   BKSP  |  CAPS   |
 //                                   '--------+---------+---------'       '-------+---------+---------'
                         bindings = <
    &trans &kp ESC        &kp Q       &kp W      &kp E     &kp R           &kp T   &kp Y  &kp U           &kp I        &kp O     &kp P      &kp LBKT   &trans
    &mt LCTRL TAB  &kp A       &kp S      &kp D     &kp F           &kp G   &kp H  &kp J           &kp K        &kp L     &kp SEMI   &kp SQT
-   &kp LSHFT      &kp Z       &kp X      &kp C     &kp V           &kp B   &kp N  &kp M           &kp COMMA    &kp DOT   &kp FSLH   &mt RALT GRAVE
-                  &kp LGUI    &mo 1      &lt NAVI RET              &kp SPACE       &kp BSPC    &kp CAPSLOCK
+   &kp LGUI       &kp Z       &kp X      &kp C     &kp V           &kp B   &kp N  &kp M           &kp COMMA    &kp DOT   &kp FSLH   &mt RALT GRAVE
+                  &kp LSHFT    &mo 1      &lt NAVI RET              &kp SPACE       &kp BSPC    &kp CAPSLOCK
                         >;
                 };
                 
@@ -56,15 +56,15 @@
 // |--------------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
 // |              |    !    |    @   |   #    |    $    |    %    |       |   ^   |    &    |    *    |    (    |     )    |     :    |
 // |--------------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
-// |   SHFT       |         |    +   |   -    |    {    |    [    |       |   ]   |    }    |    =    |    _    |          |          |
+// |   GUI        |         |    +   |   -    |    {    |    [    |       |   ]   |    }    |    =    |    _    |          |          |
 // '---------------------------------+--------+---------+---------+       |-------+---------+---------+-------------------------------'
-//                                   |  GUI   |         |   MO3   |       |   ,   |    .    |   ?     |
+//                                   |  SHFT  |         |   MO3   |       |   ,   |    .    |   ?     |
 //                                   '--------+---------+---------'       '-------+---------+---------'
                         bindings = <
    &trans &kp ESC    &kp N1       &kp N2            &kp N3             &kp N4               &kp N5            &kp N6                   &kp N7                     &kp N8                 &kp N9                   &kp N0     &kp GRAVE &trans
    &trans     &kp EXCL     &kp AT            &kp HASH           &kp DLLR             &kp PRCNT         &kp CARET                &kp AMPS                   &kp KP_MULTIPLY        &kp LPAR                 &kp RPAR   &kp COLON
-   &kp LSHFT  &trans       &kp KP_PLUS       &kp KP_MINUS       &kp LEFT_BRACE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET        &kp RIGHT_BRACE            &kp KP_EQUAL           &kp UNDERSCORE           &trans     &trans
-                                             &kp LGUI           &trans               &mo ADJUST        &kp KP_N1                &kp KP_N2                  &kp KP_N3
+   &kp LGUI   &trans       &kp KP_PLUS       &kp KP_MINUS       &kp LEFT_BRACE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET        &kp RIGHT_BRACE            &kp KP_EQUAL           &kp UNDERSCORE           &trans     &trans
+                                             &kp LSHFT           &trans               &mo ADJUST        &kp KP_N1                &kp KP_N2                  &kp KP_N3
                         >;
                 };
                 
@@ -99,7 +99,7 @@
 //                             '--------+---------+---------'       '--------+--------+---------'
 
                         bindings = <
-   &trans &reset      &trans          &trans         &trans          &trans          &trans            &kp C_VOLUME_UP    &trans &trans &trans &trans &reset &trans
+   &trans &sys_reset      &trans          &trans         &trans          &trans          &trans            &kp C_VOLUME_UP    &trans &trans &trans &trans &sys_reset &trans
    &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4      &kp C_VOLUME_DOWN  &trans &trans &trans &trans &trans
    &trans      &trans          &trans         &trans          &trans          &trans            &trans             &trans &trans &trans &trans &trans
                                    &trans &trans &trans   &trans &trans &trans
